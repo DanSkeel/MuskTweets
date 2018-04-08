@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF120B4F207A51B0004060B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF120B4E207A51B0004060B9 /* AppDelegate.m */; };
+		CF120B58207A51B0004060B9 /* MuskTweets.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CF120B56207A51B0004060B9 /* MuskTweets.xcdatamodeld */; };
+		CF120B5A207A51B0004060B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF120B59207A51B0004060B9 /* Assets.xcassets */; };
+		CF120B5D207A51B0004060B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF120B5B207A51B0004060B9 /* LaunchScreen.storyboard */; };
+		CF120B60207A51B0004060B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF120B5F207A51B0004060B9 /* main.m */; };
+		CF120B6A207A51B0004060B9 /* MuskTweetsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF120B69207A51B0004060B9 /* MuskTweetsTests.m */; };
+		CF120B76207A5577004060B9 /* MTTweetsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF120B75207A5577004060B9 /* MTTweetsTableViewController.m */; };
+		CF120B81207A809E004060B9 /* MTDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF120B80207A809E004060B9 /* MTDataController.m */; };
+		CFB131D6207D23CF004F9F59 /* MTRecentTweetsController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB131D5207D23CF004F9F59 /* MTRecentTweetsController.m */; };
+		CFB131E0207D4BF6004F9F59 /* MTTweetsLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB131DF207D4BF6004F9F59 /* MTTweetsLoader.m */; };
+		CFB131E3207D4E0D004F9F59 /* MTTimelineTweetsLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB131E2207D4E0D004F9F59 /* MTTimelineTweetsLoader.m */; };
+		CFDFC3B5207AB8CC0014A92D /* MTTweetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDFC3B3207AB8CC0014A92D /* MTTweetTableViewCell.m */; };
+		CFDFC3B6207AB8CC0014A92D /* MTTweetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFDFC3B4207AB8CC0014A92D /* MTTweetTableViewCell.xib */; };
+		CFF7E21C207F7B620084F22B /* MTTweetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF7E21A207F7B620084F22B /* MTTweetViewController.m */; };
+		CFF7E21D207F7B620084F22B /* MTTweetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFF7E21B207F7B620084F22B /* MTTweetViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF120B66207A51B0004060B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF120B42207A51AF004060B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF120B49207A51B0004060B9;
+			remoteInfo = MuskTweets;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF120B4A207A51B0004060B9 /* MuskTweets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuskTweets.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF120B4D207A51B0004060B9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CF120B4E207A51B0004060B9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CF120B57207A51B0004060B9 /* MuskTweets.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MuskTweets.xcdatamodel; sourceTree = "<group>"; };
+		CF120B59207A51B0004060B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF120B5C207A51B0004060B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF120B5E207A51B0004060B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF120B5F207A51B0004060B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF120B65207A51B0004060B9 /* MuskTweetsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuskTweetsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF120B69207A51B0004060B9 /* MuskTweetsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MuskTweetsTests.m; sourceTree = "<group>"; };
+		CF120B6B207A51B0004060B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF120B74207A5577004060B9 /* MTTweetsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTTweetsTableViewController.h; sourceTree = "<group>"; };
+		CF120B75207A5577004060B9 /* MTTweetsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTTweetsTableViewController.m; sourceTree = "<group>"; };
+		CF120B79207A6089004060B9 /* MTMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTMacros.h; sourceTree = "<group>"; };
+		CF120B7F207A809E004060B9 /* MTDataController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTDataController.h; sourceTree = "<group>"; };
+		CF120B80207A809E004060B9 /* MTDataController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTDataController.m; sourceTree = "<group>"; };
+		CF120B85207A93F0004060B9 /* MTTweetsControllerP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTTweetsControllerP.h; sourceTree = "<group>"; };
+		CFB131D4207D23CF004F9F59 /* MTRecentTweetsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTRecentTweetsController.h; sourceTree = "<group>"; };
+		CFB131D5207D23CF004F9F59 /* MTRecentTweetsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTRecentTweetsController.m; sourceTree = "<group>"; };
+		CFB131D8207D2BE1004F9F59 /* MTTweetsLoaderP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTTweetsLoaderP.h; sourceTree = "<group>"; };
+		CFB131DE207D4BF5004F9F59 /* MTTweetsLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTTweetsLoader.h; sourceTree = "<group>"; };
+		CFB131DF207D4BF6004F9F59 /* MTTweetsLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTTweetsLoader.m; sourceTree = "<group>"; };
+		CFB131E1207D4E0D004F9F59 /* MTTimelineTweetsLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTTimelineTweetsLoader.h; sourceTree = "<group>"; };
+		CFB131E2207D4E0D004F9F59 /* MTTimelineTweetsLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTTimelineTweetsLoader.m; sourceTree = "<group>"; };
+		CFDFC3B2207AB8CC0014A92D /* MTTweetTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTTweetTableViewCell.h; sourceTree = "<group>"; };
+		CFDFC3B3207AB8CC0014A92D /* MTTweetTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTTweetTableViewCell.m; sourceTree = "<group>"; };
+		CFDFC3B4207AB8CC0014A92D /* MTTweetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MTTweetTableViewCell.xib; sourceTree = "<group>"; };
+		CFF7E219207F7B620084F22B /* MTTweetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTTweetViewController.h; sourceTree = "<group>"; };
+		CFF7E21A207F7B620084F22B /* MTTweetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTTweetViewController.m; sourceTree = "<group>"; };
+		CFF7E21B207F7B620084F22B /* MTTweetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MTTweetViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF120B47207A51B0004060B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF120B62207A51B0004060B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF120B41207A51AF004060B9 = {
+			isa = PBXGroup;
+			children = (
+				CF120B4C207A51B0004060B9 /* MuskTweets */,
+				CF120B68207A51B0004060B9 /* MuskTweetsTests */,
+				CF120B4B207A51B0004060B9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF120B4B207A51B0004060B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF120B4A207A51B0004060B9 /* MuskTweets.app */,
+				CF120B65207A51B0004060B9 /* MuskTweetsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF120B4C207A51B0004060B9 /* MuskTweets */ = {
+			isa = PBXGroup;
+			children = (
+				CF120B4D207A51B0004060B9 /* AppDelegate.h */,
+				CF120B4E207A51B0004060B9 /* AppDelegate.m */,
+				CF120B78207A5A28004060B9 /* Common */,
+				CF120B7E207A8072004060B9 /* Controllers */,
+				CF120B77207A5584004060B9 /* ViewControllers */,
+				CFDFC3AE207AB8920014A92D /* Views */,
+				CF120B59207A51B0004060B9 /* Assets.xcassets */,
+				CF120B5B207A51B0004060B9 /* LaunchScreen.storyboard */,
+				CF120B5E207A51B0004060B9 /* Info.plist */,
+				CF120B5F207A51B0004060B9 /* main.m */,
+				CF120B56207A51B0004060B9 /* MuskTweets.xcdatamodeld */,
+			);
+			path = MuskTweets;
+			sourceTree = "<group>";
+		};
+		CF120B68207A51B0004060B9 /* MuskTweetsTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF120B69207A51B0004060B9 /* MuskTweetsTests.m */,
+				CF120B6B207A51B0004060B9 /* Info.plist */,
+			);
+			path = MuskTweetsTests;
+			sourceTree = "<group>";
+		};
+		CF120B77207A5584004060B9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CFF7E21F207FC34E0084F22B /* MTTweetsTableViewController */,
+				CFF7E21E207F7B660084F22B /* MTTweetViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CF120B78207A5A28004060B9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CF120B79207A6089004060B9 /* MTMacros.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CF120B7E207A8072004060B9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CFF7E220207FC3750084F22B /* MTDataController */,
+				CFB131D7207D2BC1004F9F59 /* TweetLoader */,
+				CF120B86207A9CE9004060B9 /* TweetsController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CF120B86207A9CE9004060B9 /* TweetsController */ = {
+			isa = PBXGroup;
+			children = (
+				CF120B85207A93F0004060B9 /* MTTweetsControllerP.h */,
+				CFB131D4207D23CF004F9F59 /* MTRecentTweetsController.h */,
+				CFB131D5207D23CF004F9F59 /* MTRecentTweetsController.m */,
+			);
+			path = TweetsController;
+			sourceTree = "<group>";
+		};
+		CFB131D7207D2BC1004F9F59 /* TweetLoader */ = {
+			isa = PBXGroup;
+			children = (
+				CFB131D8207D2BE1004F9F59 /* MTTweetsLoaderP.h */,
+				CFB131DE207D4BF5004F9F59 /* MTTweetsLoader.h */,
+				CFB131DF207D4BF6004F9F59 /* MTTweetsLoader.m */,
+				CFF7E218207E7D900084F22B /* TimelineTweetLoader */,
+			);
+			path = TweetLoader;
+			sourceTree = "<group>";
+		};
+		CFDFC3AE207AB8920014A92D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CFDFC3B7207AB8D00014A92D /* MTTweetTableViewCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CFDFC3B7207AB8D00014A92D /* MTTweetTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CFDFC3B2207AB8CC0014A92D /* MTTweetTableViewCell.h */,
+				CFDFC3B3207AB8CC0014A92D /* MTTweetTableViewCell.m */,
+				CFDFC3B4207AB8CC0014A92D /* MTTweetTableViewCell.xib */,
+			);
+			path = MTTweetTableViewCell;
+			sourceTree = "<group>";
+		};
+		CFF7E218207E7D900084F22B /* TimelineTweetLoader */ = {
+			isa = PBXGroup;
+			children = (
+				CFB131E1207D4E0D004F9F59 /* MTTimelineTweetsLoader.h */,
+				CFB131E2207D4E0D004F9F59 /* MTTimelineTweetsLoader.m */,
+			);
+			path = TimelineTweetLoader;
+			sourceTree = "<group>";
+		};
+		CFF7E21E207F7B660084F22B /* MTTweetViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CFF7E219207F7B620084F22B /* MTTweetViewController.h */,
+				CFF7E21A207F7B620084F22B /* MTTweetViewController.m */,
+				CFF7E21B207F7B620084F22B /* MTTweetViewController.xib */,
+			);
+			path = MTTweetViewController;
+			sourceTree = "<group>";
+		};
+		CFF7E21F207FC34E0084F22B /* MTTweetsTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CF120B74207A5577004060B9 /* MTTweetsTableViewController.h */,
+				CF120B75207A5577004060B9 /* MTTweetsTableViewController.m */,
+			);
+			path = MTTweetsTableViewController;
+			sourceTree = "<group>";
+		};
+		CFF7E220207FC3750084F22B /* MTDataController */ = {
+			isa = PBXGroup;
+			children = (
+				CF120B7F207A809E004060B9 /* MTDataController.h */,
+				CF120B80207A809E004060B9 /* MTDataController.m */,
+			);
+			path = MTDataController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF120B49207A51B0004060B9 /* MuskTweets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF120B6E207A51B0004060B9 /* Build configuration list for PBXNativeTarget "MuskTweets" */;
+			buildPhases = (
+				CF120B46207A51B0004060B9 /* Sources */,
+				CF120B47207A51B0004060B9 /* Frameworks */,
+				CF120B48207A51B0004060B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MuskTweets;
+			productName = MuskTweets;
+			productReference = CF120B4A207A51B0004060B9 /* MuskTweets.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF120B64207A51B0004060B9 /* MuskTweetsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF120B71207A51B0004060B9 /* Build configuration list for PBXNativeTarget "MuskTweetsTests" */;
+			buildPhases = (
+				CF120B61207A51B0004060B9 /* Sources */,
+				CF120B62207A51B0004060B9 /* Frameworks */,
+				CF120B63207A51B0004060B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF120B67207A51B0004060B9 /* PBXTargetDependency */,
+			);
+			name = MuskTweetsTests;
+			productName = MuskTweetsTests;
+			productReference = CF120B65207A51B0004060B9 /* MuskTweetsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF120B42207A51AF004060B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MT;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = DanSkeel;
+				TargetAttributes = {
+					CF120B49207A51B0004060B9 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					CF120B64207A51B0004060B9 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CF120B49207A51B0004060B9;
+					};
+				};
+			};
+			buildConfigurationList = CF120B45207A51AF004060B9 /* Build configuration list for PBXProject "MuskTweets" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF120B41207A51AF004060B9;
+			productRefGroup = CF120B4B207A51B0004060B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF120B49207A51B0004060B9 /* MuskTweets */,
+				CF120B64207A51B0004060B9 /* MuskTweetsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF120B48207A51B0004060B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFDFC3B6207AB8CC0014A92D /* MTTweetTableViewCell.xib in Resources */,
+				CFF7E21D207F7B620084F22B /* MTTweetViewController.xib in Resources */,
+				CF120B5D207A51B0004060B9 /* LaunchScreen.storyboard in Resources */,
+				CF120B5A207A51B0004060B9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF120B63207A51B0004060B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF120B46207A51B0004060B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFB131E0207D4BF6004F9F59 /* MTTweetsLoader.m in Sources */,
+				CFDFC3B5207AB8CC0014A92D /* MTTweetTableViewCell.m in Sources */,
+				CF120B81207A809E004060B9 /* MTDataController.m in Sources */,
+				CFF7E21C207F7B620084F22B /* MTTweetViewController.m in Sources */,
+				CFB131E3207D4E0D004F9F59 /* MTTimelineTweetsLoader.m in Sources */,
+				CF120B76207A5577004060B9 /* MTTweetsTableViewController.m in Sources */,
+				CF120B4F207A51B0004060B9 /* AppDelegate.m in Sources */,
+				CF120B60207A51B0004060B9 /* main.m in Sources */,
+				CF120B58207A51B0004060B9 /* MuskTweets.xcdatamodeld in Sources */,
+				CFB131D6207D23CF004F9F59 /* MTRecentTweetsController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF120B61207A51B0004060B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF120B6A207A51B0004060B9 /* MuskTweetsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF120B67207A51B0004060B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF120B49207A51B0004060B9 /* MuskTweets */;
+			targetProxy = CF120B66207A51B0004060B9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF120B5B207A51B0004060B9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF120B5C207A51B0004060B9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF120B6C207A51B0004060B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CF120B6D207A51B0004060B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF120B6F207A51B0004060B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HXM84WT3TG;
+				INFOPLIST_FILE = MuskTweets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MT.MuskTweets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF120B70207A51B0004060B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HXM84WT3TG;
+				INFOPLIST_FILE = MuskTweets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MT.MuskTweets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CF120B72207A51B0004060B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HXM84WT3TG;
+				INFOPLIST_FILE = MuskTweetsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MT.MuskTweetsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MuskTweets.app/MuskTweets";
+			};
+			name = Debug;
+		};
+		CF120B73207A51B0004060B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HXM84WT3TG;
+				INFOPLIST_FILE = MuskTweetsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MT.MuskTweetsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MuskTweets.app/MuskTweets";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF120B45207A51AF004060B9 /* Build configuration list for PBXProject "MuskTweets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF120B6C207A51B0004060B9 /* Debug */,
+				CF120B6D207A51B0004060B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF120B6E207A51B0004060B9 /* Build configuration list for PBXNativeTarget "MuskTweets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF120B6F207A51B0004060B9 /* Debug */,
+				CF120B70207A51B0004060B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF120B71207A51B0004060B9 /* Build configuration list for PBXNativeTarget "MuskTweetsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF120B72207A51B0004060B9 /* Debug */,
+				CF120B73207A51B0004060B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CF120B56207A51B0004060B9 /* MuskTweets.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CF120B57207A51B0004060B9 /* MuskTweets.xcdatamodel */,
+			);
+			currentVersion = CF120B57207A51B0004060B9 /* MuskTweets.xcdatamodel */;
+			path = MuskTweets.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CF120B42207A51AF004060B9 /* Project object */;
+}
